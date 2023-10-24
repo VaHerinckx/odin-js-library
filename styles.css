@@ -1,12 +1,41 @@
+@font-face {
+  font-family: "wotfard";
+  src: url("wotfard-regular-webfont.ttf");
+}
+
+:root {
+  font-family: "wotfard";
+}
+
+#addBook {
+  width: 75px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  background-color: #3D315B;
+  color: white;
+  padding: 10px;
+  border-radius: 5%;
+}
+
 body {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  font-family: "wotfard";
+  background-color: #F5E4D7;
 }
 
 button {
   text-align: center;
+  font-family: "wotfard";
+  background-color: #3D315B;
+  color: white;
+
 }
 
 #addBook, #showLibrary {
@@ -15,14 +44,33 @@ button {
 
 .books {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-auto-flow: row;
   gap: 10px;
+  width: 90%;
+  margin: 10px 10px 10px 10px;
+}
+
+
+#submitButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .book {
-  border: black solid 1px
+  border: black solid 1px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
 }
+
+.book span {
+  width: 70%
+}
+
 
 form {
   display: flex;
