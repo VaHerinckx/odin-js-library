@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <dialog>
+    <form action="" class="newBookForm">
+      <label for="name">Book name: </label><input type="text" id="name" placeholder="Harry Potter" required>
+      <label for="author">Author name: </label><input type="text" id="author" placeholder="JK Rowling" required>
+      <label for="pages">Number of pages: </label><input type="number" id="pages" placeholder="800" required>
+      <div class="radio">
+        <input type="radio" id="read" value="read" name="read-notread" checked>
+        <label for="read">I've read it</label>
+      </div>
+      <div class="radio">
+        <input type="radio" id="not-read" value="not-read" name="read-notread">
+        <label for="not-read">I've not read it</label>
+      </div>
+    </form>
+    <button type="submit" autofocus>Submit new book</button>
+  </dialog>
+  <button id="addBook">Add a book</button>
+  <div class="books"></div>
+  <script src="script.js"></script>
+</body>
+</html>
